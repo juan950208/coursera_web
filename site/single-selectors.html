@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Simple selectors</title>
+<style>
+
+h2{
+    color: red;
+     text-align: center;
+}
+
+/*class*/
+.highlight{
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    background-color: beige;
+
+}
+
+/*id selector*/
+#mainPoint{
+    font-size: 24px;
+    font-weight: bold;
+    background-color: brown;
+    opacity: .7;
+}
+
+/*all p and h1 elements*/
+p, h1{
+    color: darkblue;
+    text-align: center;
+}
+
+</style>
+</head>
+<body>
+<h1>Simple selectors (h1)</h1>
+<h2>subheading 1 (h2)</h2>
+<p class="highlight">CSS selectors are used to determine which HTML 
+    element, or set of elements, to apply the CSS declarations to.
+    The browser uses its selector API to traverse the DOM or Document
+    Object Model, and pick out the elements matching the selector. </p>
+<p class="highlight">First element selector, the element selector
+    is just you specifying the element name. For example, in this case,
+    p for paragraph says that every paragraph in our HTML document should
+    be colored blue.</p>
+<h2>Subheadung 2 (h2)</h2>
+<p>First element selector, the element selector
+    is just you specifying the element name. For example, in this case,
+    p for paragraph says that every paragraph in our HTML document should
+    be colored blue.</p>
+<div>This is the main of the article
+    <span id="mainPoint">id="mainPoint"</span>
+</div>
+    
+</body>
+</html>
