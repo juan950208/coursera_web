@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>pseudo class selectors</title>
+<style>
+    
+    /*quita los puntos de la lista*/
+    header li{
+        list-style: none;
+    }
+
+    a:link, a:visited{
+        text-decoration: none;
+        background-color: green;
+        border: 1px solid blue;
+        color: black;
+        display: block;
+        width: 200px;
+        text-align: center;
+        margin-bottom: 1px;
+    }
+
+    a:hover, a:active{
+        background-color: red;
+        color: white;
+    }
+
+    /*aplica al tercer elemento de la lista*/
+    header li:nth-child(3){
+        font-size: 24px;
+    }
+
+    section div:nth-child(odd){
+        background-color: yellowgreen;
+    }
+
+    section div:nth-child(4):hover{
+        background-color: turquoise;
+    }
+</style>
+<body>
+    <h1>pseudo class selectors</h1>
+
+    <header>
+        <ul>
+            <li><a href="https://es.wikipedia.org/wiki/HTML">HTML</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/Lenguaje_de_marcado">PAGINA</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/World_Wide_Web">WWW</a></li>
+        </ul>
+    </header>
+
+    <section>
+        <div>DIV 1</div>
+        <div>DIV 2</div>
+        <div>DIV 3</div>
+        <div>DIV 4</div>
+        <div>DIV 5</div>
+        <div>DIV 6</div>
+        <div>DIV 7</div>
+        <div>DIV 8</div>
+        <div>DIV 9</div>
+        <div>DIV 10</div>
+        <div>DIV 11</div>
+        <div>DIV 12</div>
+    </section>
+</body>
+</html>
