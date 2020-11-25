@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Box model before</title>
+<style>
+    /*el star selector aplica la propiedad a ABSOLUTAMENTE todos
+    los elementos de la página.*/
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: gray;
+    }
+    #box{
+        background-color: blue;
+        padding: 10px 10px 10px 10px;
+        border: 3px solid black;
+        margin: 40px;
+        width: 600px;
+        margin-top: 50px;
+    }
+    #content{
+        background-color: cadetblue;
+    }
+    h1{
+        margin-bottom: 30px;
+    }
+</style>
+</head>
+<body>
+    <h1>box model</h1>
+    <div id="box">
+        <div id="content">contenido random here</div>
+    </div>
+</body>
+</html>
